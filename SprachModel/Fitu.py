@@ -10,7 +10,7 @@ model = GPT2LMHeadModel.from_pretrained(model_path)
 tokenizer.pad_token = tokenizer.eos_token 
 
 # we open and read our data
-csv_file = "data\SymptomsXanswer-chat.csv"
+csv_file = "SymptomsXanswer-chat.csv"
 data = pd.read_csv(csv_file)
 
 
