@@ -37,7 +37,7 @@ while True:
 
     generated_text = tokenizer.decode(predicted_disease_ids[0], skip_special_tokens=True)
     predicted_disease = generated_text.split('[SEP]')[1].strip() if '[SEP]' in generated_text else "No prediction"
-    print(f"Predicted Disease: {predicted_disease}")
+    # print(f"Predicted Disease: {predicted_disease}")
 
     # disease2diagnosis
     disease_input_ids = tokenizer.encode(predicted_disease, return_tensors='pt').to(device)
@@ -54,5 +54,9 @@ while True:
         top_k=20
     )
 
-    diagnosis_advice = tokenizer.decode(diagnosis_output[0], skip_special_tokens=True)
-    print("Diagnosis: ", diagnosis_advice)
+    generated_text = tokenizer.decode(diagnosis_output[0], skip_special_tokens=True)
+    generated_text = generated_text.replace('[SEP]', '.')
+    cut_off_point = generated_text.rfind('.') + 1
+    final_text = generated_text[:cut_off_point]
+
+    print(final_text)
