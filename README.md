@@ -1,8 +1,8 @@
-# MedBot: KI-gestützter medizinischer Chatbot mit Bilderkennung
+# Diseases Diagnostician (V2.0): KI-gestützter medizinischer Chatbot mit Bilderkennung
 
-> _Ein Semesterprojekt an der Schnittstelle von KI, NLP, Computer Vision und Gesundheitswesen._
+> _Projektstudium 2 an der Schnittstelle von KI, NLP, Computer Vision und Gesundheitswesen._
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blau)
+![Python](https://img.shields.io/badge/Python-3.11%2B-blau)
 ![Framework](https://img.shields.io/badge/Backend-Flask-orange)
 ![Lizenz](https://img.shields.io/badge/Lizenz-MIT-grün)
 
@@ -10,11 +10,13 @@
 
 ## Kurzbeschreibung
 
-**MedBot** ist ein Prototyp eines intelligenten Chatbots, der:
+**Diseases Diagnostician (V2.0)** ist ein Prototyp eines intelligenten Chatbots, der:
 
 - Textbasierte Symptome analysiert → Diagnosevorschläge macht.
-- Medizinische Bilder klassifiziert (z. B. Hautausschläge, Röntgen).
+- Medizinische Bilder klassifiziert (Röntgen).
 - Über eine Web-Oberfläche bedienbar ist.
+
+<img width="1126" height="763" alt="image" src="https://github.com/user-attachments/assets/361b0bd0-73ac-46db-b07b-79cb4a5e9191" />
 
 ---
 
@@ -39,6 +41,7 @@ F1: 87%
 - **Daten**: HAM10000, CheXpert – mit Augmentation vorbereitet.
 - **Genauigkeit**: Bis zu 93% .
 
+
 ### 3. Webanwendung
 
 - **Backend**: Flask (Python) – REST-API für Text- und Bildanalyse.
@@ -59,6 +62,7 @@ python server.py
 
 ---
 
+
 ## Was wir gelernt haben
 
 - Teamarbeit ist entscheidend – besonders mit unterschiedlichen Vorkenntnissen.
@@ -69,5 +73,3 @@ python server.py
 ---
 
 _„Technik ersetzt keine Ärzte – aber Ärzte, die Technik nutzen, werden die sein, die bleiben.“_
-
----
