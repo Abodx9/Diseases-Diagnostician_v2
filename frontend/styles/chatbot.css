@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #121212;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox will automatically adjust the size, but we should avoid fixed widths for full responsiveness */
+.form-header {
+  display: flex;
+  flex-direction: column; /* Stack children vertically on smaller screens */
+  width: 90%; /* Use percentage instead of fixed */
+  max-width: 1000px; /* Max width for large screens */
+  margin: 3em auto 0em;
+  padding: 1em;
+  background: #333333;
+  color: #ee0a64;
+  border-radius: 2em 2em 0em 0em;
+}
+
+.form-header__title {
+  text-align: center;
+}
+
+/* The section now uses max-width and width in percentages for flexibility */
+section {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: none;
+}
+
+
+.form-window {
+  height: 400px;
+  overflow-y: scroll;
+  border-radius: 2em 2em 0em 0em;
+  padding: 2em 1em 1em 1em;
+  margin-top: -30px;
+  background: #090909;
+  border-color: #2a2a29;
+  box-shadow: inset 0px -29px 29px -16px rgba(101, 101, 101, 0.15);
+}
+
+.pat-bubble {
+  background: #fafbfb;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: flex-start;
+  padding: 1em;
+  margin: 0.5em 0;
+  color: #080808;
+  font-weight: bold;
+  border-radius: 0em 2em 2em 2em;
+  border: 1px solid #cccccc;
+  font-size: 1em;
+}
+.bot-bubble {
+  display: flex;
+  background: #000000;
+  color: #ffffff;
+  align-self: flex-end;
+  order: 0;
+  flex: 0 1 auto;
+  border-radius: 2em 0em 2em 2em;
+}
+
+.user-entry {
+  padding: 1em;
+  border-radius: 0em 0em 2em 2em;
+  border: 1px solid #cccccc;
+}
+.user-entry__input {
+  width: calc(100% - 50px - 1em);
+  height: 40px;
+  border-radius: 1em;
+  border: 1px solid #0a0a0a;
+  font-weight: bold;
+  padding-left: 1em;
+  font-size: 1em;
+  color: #333333;
+  margin-right: 10px;
+}
+.user-entry__submit {
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  background: #ee0a64;
+  color: #070707;
+  font-size: 20px;
+  transform: rotate(-45deg);
+}
+
+.camera-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}

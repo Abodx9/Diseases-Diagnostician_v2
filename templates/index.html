@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="/frontend/styles/chatbot.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+   <header class="form-header">
+    <div class="form-header__title">
+      <h1>Diseases Diagnostician (V2.0)</h1>
+	   <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="resnet">
+        <label class="custom-control-label" for="resnet">ResNet50</label>
+      </div>
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="trnsf">
+        <label class="custom-control-label" for="trnsf">Vision-Transformer</label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-window" id="chat-window">
+       <div class="pat-bubble">I am feeling bad</div>
+      <div class="pat-bubble bot-bubble" id="bot-response">How can I help you?</div>
+    </section>
+
+    <section class="user-entry">
+      <form id="chat-form">
+        <input type="text" class="user-entry__input" id="user-input" placeholder="Type your Symptoms...">
+        <button type="submit" class="user-entry__submit" value="Submit">Ok</button>
+        <img src="/frontend/icons/kamera.png" alt="Camera" class="camera-icon" id="camera-icon">
+        <input type="file" id="file-input" accept="image/*" style="display:none;">
+      </form>
+    </section>
+  </main>
+
+  <footer></footer>
+<script src='/frontend/Scripts/script.js'></script>
+</body>
+</html>
