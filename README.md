@@ -58,9 +58,7 @@ pip install -r requirements.txt
 python server.py
 ```
 
-> ⚠️ Modelldateien nicht im Repo – ggf. separat trainieren oder herunterladen.
-
-Mediafire Link: [Download](https://www.mediafire.com/file/m8gnz4uk1zxjp5d/models.tar.gz/file)
+> ⚠️ Modelldateien nicht im Repo – ggf. separat trainieren oder [herunterladen](https://www.mediafire.com/file/m8gnz4uk1zxjp5d/models.tar.gz/file)
 ---
 
 
