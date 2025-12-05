@@ -52,8 +52,8 @@ F1: 87%
 ## Starten
 
 ```bash
-git clone https://github.com/Abodx9/ki-projekt.git
-cd ki-projekt
+git clone https://github.com/Abodx9/Diseases-Diagnostician_v2.git
+cd Diseases-Diagnostician_v2
 pip install -r requirements.txt
 python server.py
 ```
